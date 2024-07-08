@@ -33,7 +33,7 @@ while cap.isOpened():
         if cv2.contourArea(contour)<min_area:
             continue
         (x,y,w,h) = cv2.boundingRect(contour)
-        cv2.rectangle(fm, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        cv2.rectangle(fm, (x, y), (x+w, y+h), (0,165,255), 2)
 
         md = True
         mc = fps
